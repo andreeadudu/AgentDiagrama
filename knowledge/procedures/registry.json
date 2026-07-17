@@ -1,0 +1,8 @@
+[
+    {
+        "id": "diagram_generation_procedure",
+        "name": "Diagram Generation Procedure",
+        "description": "Step-by-step process for turning a text requirement into a validated Mermaid diagram.",
+        "always_load": true
+    }
+]

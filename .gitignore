@@ -1,0 +1,18 @@
+# Environment & secrets
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated files
+embeddings_store.json
+exported_diagrams/
+conversation_history/
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/

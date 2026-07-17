@@ -1,0 +1,20 @@
+[
+    {
+        "id": "mermaid_diagram_types",
+        "name": "Mermaid Diagram Types",
+        "description": "Quick reference for choosing the right Mermaid diagram type based on the user's request.",
+        "always_load": true
+    },
+    {
+        "id": "mermaid_syntax_reference",
+        "name": "Mermaid Syntax Reference",
+        "description": "Detailed syntax rules for each Mermaid diagram type. Large document, retrieved via semantic search only when relevant.",
+        "always_load": false
+    },
+    {
+        "id": "software_architecture_patterns",
+        "name": "Software Architecture Patterns",
+        "description": "Common architecture patterns and which diagram types best represent them. Retrieved via semantic search when the user mentions a specific pattern.",
+        "always_load": false
+    }
+]
