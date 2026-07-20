@@ -41,7 +41,6 @@ Two different AI models are used for two different jobs: a small local model jus
 ```
 diagrama-agent/
 ├── main.py                      # CLI entry point
-├── web_app.py                   # Flask Web UI + REST API
 ├── streamlit_app.py             # Streamlit Web UI
 ├── config.py                    # All configurable settings
 ├── agent.py                     # Core agent orchestration
@@ -64,7 +63,6 @@ diagrama-agent/
 │   ├── facts/                   # Mermaid syntax reference, diagram types
 │   └── procedures/              # Step-by-step generation process
 │
-├── web/                         # Flask Web UI frontend
 ├── tests/                       # Unit tests
 ├── requirements.txt
 └── README.md
@@ -94,13 +92,7 @@ python embedding_generator.py
 python main.py
 ```
 
-**In a browser (Flask):**
-```bash
-python web_app.py
-```
-Then open `http://localhost:5000` — diagrams are rendered visually.
-
-**In a browser (Streamlit):**
+**In a browser:**
 ```bash
 streamlit run streamlit_app.py
 ```
