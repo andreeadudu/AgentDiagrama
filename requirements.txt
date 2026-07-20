@@ -1,0 +1,6 @@
+openai
+requests
+tiktoken
+colorama
+flask
+streamlit
