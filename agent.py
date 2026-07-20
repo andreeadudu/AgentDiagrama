@@ -172,6 +172,7 @@ class Agent:
             "_retrieval": True
         })
 
+    @timed
     def process_message(self, user_message):
         """
         Runs one full turn: retrieval, model call, tool execution
@@ -183,6 +184,8 @@ class Agent:
         CLI loop alive, since the agent has no sensible answer to give
         without the model.
         """
+        logger.info("User question: %s", user_message)
+
         self._inject_relevant_context(user_message)
 
         self.context.add_message({
@@ -212,4 +215,7 @@ class Agent:
 
         self.context.add_message(message)
 
-        return _clean_response(message.get("content", ""))
+        final_response = _clean_response(message.get("content", ""))
+        logger.info("Generated response: %s", final_response[:200])
+
+        return final_response
