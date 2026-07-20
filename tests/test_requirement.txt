@@ -1,0 +1,1 @@
+The system has three microservices: UserService manages user accounts and authentication, OrderService handles order creation and tracking, and PaymentService processes payments via Stripe. The API Gateway routes all client requests to the appropriate service. UserService and OrderService each have their own PostgreSQL database. PaymentService calls the Stripe API externally.
