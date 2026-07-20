@@ -9,10 +9,28 @@ tools, and the language model.
 import json
 import logging
 import re
+import time
+import functools
 
 from embeddings_client import EmbeddingsClient
 
 logger = logging.getLogger(__name__)
+
+
+def timed(func):
+    """
+    Decorator care măsoară și loghează durata de execuție a funcției
+    decorate (folosit pentru process_message, ca să vedem cât
+    durează fiecare tură completă: retrieval + apel model + tool-uri).
+    """
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        elapsed = time.perf_counter() - start
+        logger.info("%s a durat %.3fs", func.__name__, elapsed)
+        return result
+    return wrapper
 
 
 def _clean_response(text):
