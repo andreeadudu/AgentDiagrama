@@ -33,8 +33,8 @@ or waste generation budget on simple vector lookups.
 
 # --- Chat Model (Azure AI Foundry) ---
 MODEL_NAME = "gpt-5-mini"
-AZURE_ENDPOINT = "https://ai...."
-API_KEY = "..."
+AZURE_ENDPOINT = "https://ai-academy-foundry.services.ai.azure.com/openai/v1"
+API_KEY = "YOUR_AZURE_API_KEY"
 
 # --- Embedding Model (local, via Ollama) ---
 EMBEDDINGS_MODEL = "bge-m3:latest"
