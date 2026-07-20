@@ -64,6 +64,7 @@ diagrama-agent/
 │   └── procedures/              # Step-by-step generation process
 │
 ├── web/                         # Flask Web UI frontend
+├── tests/                       # Unit tests
 ├── requirements.txt
 └── README.md
 ```
@@ -119,6 +120,17 @@ Generate a diagram from the file test_requirement.txt
 Or save it:
 ```
 Save the diagram to a file called checkout_flow
+```
+
+## Running Tests
+
+```bash
+pytest tests/ -v
+```
+
+To check test coverage:
+```bash
+pytest --cov=embeddings_client --cov-report=term tests/
 ```
 
 ## What Makes It Reliable
