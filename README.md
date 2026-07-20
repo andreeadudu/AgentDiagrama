@@ -5,7 +5,8 @@ Diagrama is an AI agent that turns a plain-text description of a system into a d
 It's built for software architects: instead of manually drawing every diagram by hand, you describe the system once and get a valid, ready-to-use diagram back in seconds.
 
 **Example:**
-```
+
+````
 You: Draw a sequence diagram for a user logging in through an
      auth service that checks a database
 
@@ -21,7 +22,7 @@ sequenceDiagram
 ```
 This shows the login flow between the user, the auth service,
 and the database.
-```
+````
 
 **Supported diagram types:** Flowchart, Sequence Diagram, Class Diagram, ER Diagram, State Diagram.
 
