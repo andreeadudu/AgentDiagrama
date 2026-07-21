@@ -48,7 +48,7 @@ def render_mermaid(mermaid_code):
         <pre class="mermaid">{escaped}</pre>
     </div>
     <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs';
         mermaid.initialize({{ startOnLoad: true, theme: 'default' }});
         await mermaid.run();
     </script>
@@ -98,7 +98,7 @@ if "context" not in st.session_state:
  
 # --- Sidebar ---
 with st.sidebar:
-    st.markdown("## 📐 Diagrama")
+    st.markdown("## Diagrama")
     st.caption("AI diagram generator for software architects")
  
     st.divider()
