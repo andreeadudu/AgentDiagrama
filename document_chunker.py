@@ -1,7 +1,7 @@
 """
 Document Chunker.
 
-Exercise 3 - Chunking and preparing documents for Embeddings.
+Chunking and preparing documents for Embeddings.
 
 Loads Knowledge Base documents marked with "always_load": false
 (the ones that don't go directly into the System Prompt) and splits
