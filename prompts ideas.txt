@@ -1,0 +1,54 @@
+1
+Draw a flowchart for the process of placing an order in an online store, from adding to cart to payment confirmation.
+
+Make a sequence diagram for a JWT-based authentication flow between Client, API Gateway, and Auth Service.
+
+Create a class diagram for a library system, with classes Book, Member, and Loan.
+
+Generate an ER diagram for an orders database, with entities Customer, Order, and Product.
+
+Make a state diagram for the states of an order: created, processing, shipped, delivered, cancelled.
+
+2
+Make me a diagram for my system.
+
+I want a flowchart for the business process.
+
+3
+Explain the steps of a user resetting their password: requests reset, receives email, sets new password, confirmation.
+
+4
+What syntax does Mermaid use for many-to-many relationships in an ER diagram?
+
+What's the difference between abstract class and interface notation in a Mermaid class diagram?
+
+How do you plan a birthday party?
+
+5
+Read the requirement from requirements.txt and generate a diagram based on it.
+
+6
+Read the requirement from a_file_that_does_not_exist.txt and generate a diagram.
+
+7
+Read the requirement from agent.py and generate a diagram.
+
+8
+Generate a simple flowchart for the login process and save it to a file.
+
+9
+Draw a microservices architecture diagram with 8 services, an API Gateway, a message broker, and a distributed database, with all relationships between them.
+
+10
+Make a flowchart for the checkout process.
+Now add a stock validation step before payment.
+Change the diagram from a flowchart into a sequence diagram, with actors Customer, Cart, Payment, Stock.
+
+11
+Do you still remember the first diagram I asked you for at the start of the conversation?
+
+12
+Generate a diagram in French for the process of ordering a pizza.
+
+13
+export
