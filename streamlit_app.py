@@ -13,14 +13,16 @@ import os
 import re
 import tempfile
 from datetime import datetime
- 
+
 import streamlit as st
- 
+
+from logging_config import setup_logging
+setup_logging()
+
 from agent import Agent
 from llm_client import LLMClient
 from conversation_context import ConversationContext
 from tools.tools import tools
- 
  
 st.set_page_config(
     page_title="Diagrama",
